@@ -10,7 +10,7 @@
 
 <body>
   <section class="main">
-
+    <div class="main__shadow"></div>
     <h2 class="main__title">Wybierz swoich zawodników na mecz</h2>
 
     <div class="box__wrapper">
@@ -18,6 +18,7 @@
       <div class="box top__box">
         <div class="box__team">
           <div class="team__player" draggable="true">
+            <div class="team__player-shadow"></div>
             <div class="team__player-container">
             </div>
             <h4 class="team__player-name">Marcin</h4>
@@ -77,12 +78,18 @@
 
     </div>
 
-    <div class="modal modal-active">
-
+    <div class="modal">
+      <div class="modal__wrapper">
+        <i class="fa-solid fa-xmark modal__close-btn"></i>
+      </div>
+      <label for="modal__name" class="modal__name">imię: </label>
+      <input type="text" id="modal__name" name="modal__name" placeholder="Wprowadź imię...">
+      <label for="modal__picture" class="modal__picture">wybierz zdjęcie zawodnika: </label>
+      <input type="file" class="modal__picture">
     </div>
 
   </section>
-
+  <script src="/dist/js/main.min.js"></script>
 </body>
 
 </html>
