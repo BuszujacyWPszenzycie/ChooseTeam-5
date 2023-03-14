@@ -84,17 +84,27 @@
     </div>
 
     <div class="modal">
+
+      <i class=" fa-solid fa-xmark modal__close-btn"></i>
+
       <div class="modal__wrapper">
-        <i class="fa-solid fa-xmark modal__close-btn"></i>
+
+        <h4 class="modal__title">Dodaj zawodnika</h4>
+        <input type="text" id="modal__name" name="modal__name" placeholder="Wprowadź imię..."
+          class="modal__input modal__input-name">
+        <div class="add__picture">
+          <input type="file" id="file" class="input__picture">
+          <label for="file" class="input__picture-label">Wybierz zdjęcie zawodnika</label>
+          <p class="file__name"></p>
+          <button class="btn__approve">Zatwierdź</button>
+        </div>
       </div>
-      <label for="modal__name" class="modal__name">imię: </label>
-      <input type="text" id="modal__name" name="modal__name" placeholder="Wprowadź imię...">
-      <label for="modal__picture" class="modal__picture">wybierz zdjęcie zawodnika: </label>
-      <input type="file" class="modal__picture">
+
+
     </div>
 
   </section>
-  <script src="./dist/js/main.min.js"></script>
+  <script src="./dist/js/main.min.js" type="text/javascript"></script>
 </body>
 
 </html>

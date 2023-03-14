@@ -23,3 +23,18 @@
 	background-color: $light-green;
 	border-radius: 8px;
 }
+
+@mixin modalBtn {
+	color: $font-color;
+	border-radius: 8px;
+	background-color: $light-green;
+	border: 2px solid $font-color;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	height: 50px;
+	width: 300px;
+	transition: background-color 0.3s;
+	&:hover {
+		background-color: $green;
+	}
+}
